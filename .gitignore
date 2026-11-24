@@ -1,11 +1,2 @@
-.venv/
-videos/*
-!videos/.gitkeep
-inbox/*
-!inbox/.gitkeep
 _zadaniya/
-__pycache__/
-*.pyc
-tools/python-put.txt
-tools/ustanovka-otchet.md
 .DS_Store
