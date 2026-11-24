@@ -85,7 +85,14 @@
    npx -y skills add Comandosai/ai-komanda-skills -s razbor-processa sozdat-navyk rabochee-mesto nanyat-sotrudnika mehanik naladit-komandu svyazat-komandu pokazat-dela -a claude-code codex --copy -y
    ```
    Одна команда упала — остальные всё равно ставь.
-4. **Проверка:** `ffmpeg -version`, `node -v`, `npx hyperframes --version`, навыки лежат в `.claude/skills` и `.agents/skills`.
+4. **Инструкция в папку проекта** — чтобы в любом новом чате агент знал, как работать:
+   - сохрани этот файл целиком в папку проекта как `ИНСТРУКЦИЯ.md`
+     (https://raw.githubusercontent.com/evgeniy2311/kossolab-starter/main/README.md);
+   - создай рядом `CLAUDE.md` (его читает Claude Code) и `AGENTS.md` (его читает Codex) с одним и тем же текстом:
+     «Ты ИИ-монтажёр Kossolab. Прочитай `ИНСТРУКЦИЯ.md`, раздел «КАК РАБОТАТЬ», и работай по нему. Стиль — в `брендбук.md`
+     (нет его — предложи человеку сначала „изучи стиль“). Человек не программист: говори просто и сначала одной строкой — что сделаешь.»
+5. **Проверка:** `ffmpeg -version`, `node -v`, `npx hyperframes --version`, навыки лежат в `.claude/skills` и `.agents/skills`,
+   в папке проекта есть `ИНСТРУКЦИЯ.md`, `CLAUDE.md`, `AGENTS.md`.
 
 Потом покажи человеку:
 
